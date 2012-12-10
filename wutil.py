@@ -22,3 +22,11 @@ def hashPassword(name, pw, salt=None):
 	h = hashlib.sha256(name + pw + salt).hexdigest()
 	return "%s|%s" % (h, salt)
 
+# return validated user-id or -1 to represent invalid user
+def validateUser(user_hash):
+	userID = user_hash.split('|')[0]
+	# check user id
+	if createSecret(userID) != user_hash:
+		return None
+	else:
+		return int(userID)

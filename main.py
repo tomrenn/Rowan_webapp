@@ -25,7 +25,7 @@ template_dir = os.path.join(root_dir, 'templates')
 # this import is lower because template_dir must be predefined for handlers/base.py
 import handlers.all as handlers
 
-app = webapp2.WSGIApplication([('/', handlers.MainPage),
+app = webapp2.WSGIApplication([('/?', handlers.MainPage),
 							('/food/createUser.json', handlers.CreateUserJSON),
 							('/food/test', handlers.AnotherPage),
 							('/food/ratings', handlers.ObtainRatingsJSON),

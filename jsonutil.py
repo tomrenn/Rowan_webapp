@@ -1,7 +1,7 @@
 # functions to take objects and return json
 
 import json
-
+import time
 def generateReport(foodEntry, votes=None):
 
 	commentsDict = {}
@@ -9,12 +9,12 @@ def generateReport(foodEntry, votes=None):
 	for vote in votes:
 		if vote.comment != None:
 			commentsDict[count] = {'comment' : vote.comment,
-							   	   'date' : vote.commentDate.strftime('%s')}
+							   	   'date' : time.mktime(vote.commentDate.timetuple())}
 			count += 1
 
 
 	dictFormat = {'entry' : {'id' : foodEntry.key().id(),
-							 'created' : foodEntry.created.strftime('%s'),
+							 'created' : time.mktime(foodEntry.created.timetuple()),
 							 'highestRating' : foodEntry.highestRating,
 							 'lowestRating'  : foodEntry.lowestRating,
 							 'totalVotes' : foodEntry.totalVotes,
