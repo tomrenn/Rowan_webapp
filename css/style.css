@@ -1,0 +1,160 @@
+body {
+    max-width: 500px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background: #3F1A0A;
+    font-size: medium;
+}
+#navigationBar {
+    background-image:url('/images/rowan_actionbar_background_pattern_tile.png');
+    background-repeat: repeat;
+    height: 2em;
+    padding-top: .5em;
+    text-align: center;
+    color: #3F1A0A;
+    font-weight: bold;
+}
+#switcher {
+    margin-left: 1%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: #EDD51C;
+    color: #3F1A0A;
+    font-weight: bold;
+}
+#switcher a {
+    display: inline-block;
+    height:35px;
+    padding-top: 10px;
+    color: #EDD51C;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid #EDD51C;
+    width: 49%
+}
+#rating-section {
+    color: #fff;
+}
+
+#rating-title {
+    text-align: center;
+}
+#comment-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    float: left;
+}
+#comments {
+    margin-top: 20px;
+    text-align: left;
+}
+#comments .timestamp {
+    font-size: 0.6em;
+    color: #999;
+}
+.comment {
+    color: #fff;
+    padding: 5px;
+}
+#comment-section a {
+    color: #EDD51C;
+}
+
+#upvote input{
+    display: inline-block;
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+#downvote input{
+    float: right;
+    margin-right: 5%;
+    max-height: 200px;
+    max-width: 200px;
+    width: 30%;
+}
+
+#commentForm {
+    width: 90%;
+    margin: 5%;
+}
+#commentForm input {
+    background: #3F1A0A;
+    color: #EDD51C;
+    border: 2px;
+    border-style: solid;
+    font-color: white;
+    height: 3em;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+
+/** splash page style **/
+#bio {
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid red;
+}
+#applications a {
+    color: #EDD51C;
+}
+#applications .app {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+#webApp .display a {
+    display: block;
+    border-bottom: 2px solid #EDD51C;
+    color: #EDD51C;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.app .description {
+    width: 58%;
+}
+#applications .online {
+    font-style: bold;
+    color: #00FF26;
+}
+#bio h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#applications {
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+#applications .display {
+    width: 40%;
+    float:right;
+}
+
+

@@ -24,12 +24,16 @@ template_dir = os.path.join(root_dir, 'templates')
 
 # this import is lower because template_dir must be predefined for handlers/base.py
 import handlers.all as handlers
+import handlers.front_end as front_end
 
-app = webapp2.WSGIApplication([('/?', handlers.MainPage),
+app = webapp2.WSGIApplication([('/?', front_end.SplashPage),
+							('/map/?', handlers.GoogleMap),
 							('/food/createUser.json', handlers.CreateUserJSON),
-							('/food/test', handlers.AnotherPage),
 							('/food/ratings', handlers.ObtainRatingsJSON),
 							('/food/vote', handlers.VotePage),
+							('/food/?', front_end.MainPage),
+							('/food/webVote/?', front_end.VotePage),
+							('/food/webComment/?', front_end.CommentPage),
 							('/food/comment', handlers.VoteCommentPage)], 
 								debug=True)
 

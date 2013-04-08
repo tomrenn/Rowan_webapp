@@ -1,14 +1,14 @@
 Rowan_webapp
 
-This application will provide web services for mobile clients
+This application will provide web services for mobile clients [UPDATE: now includes a mobile website frontend]
 
--- currently a work in progress -- 
+-- currently a (very ugly) work in progress -- 
 
-Below is documentation for a food rating system.
+Below is documentation for the food rating system.
 
 - DOCUMENTATION
 ================================
-There are four different HTTP calls that are used to interact with the system. They are as follows:
+There are four different HTTP calls that are used to interact with the system. **All HTTP calls use GET, not POST.** This should be changed (to POST) for actions such as voting and commenting. API calls are as follows:
 
 /food/createUser.json
 ==
@@ -23,7 +23,7 @@ JSON Output:
 
 
 
-/food/obtainRatings
+/food/ratings
 ==
 Parameters:
  * type - The type or location of ratings being requested. Available types: {"marketplace", "smokehouse"}

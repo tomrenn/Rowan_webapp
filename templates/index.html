@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Rowan Dining </title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<link REL="StyleSheet" href="/css/style.css" type="text/css">
+<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/images/touch-icon-iphone-retina.png" />
+</head>
+
+<body>
+   <div id="switcher">
+    <a href="/food/"> Marketplace</a>
+    <a href="/food/?type=smokehouse"> Smokehouse</a> 
+   </div>
+   <h2> {{ type_name }} </h2>
+
+
+       <div id="downvote">
+       		<form action="/food/webVote?food={{entry_id}}&vote=0" method="post">
+            	<input type="image" src="/images/downvote{{down}}.png">
+            </form>
+       </div>
+
+       <div id="upvote">
+       		<form action="/food/webVote?food={{entry_id}}&vote=1" method="post">
+            	<input type="image" src="/images/upvote{{up}}.png">
+            </form>
+       </div>
+
+        <div id="rating-section">
+            <div id="rating-title">
+             {{ percentage }}%
+             <div id="vote-totals">
+             	<span class="upvote-totals"> {{ upvotes }} </span> / 
+             	<span class="downvote-totals"> {{ downvotes }} </span>
+             </div>
+            </div>
+        </div>
+
+  <div id="comment-section">
+  <a href="/food/webComment?type={{type_name}}&food={{entry_id}}"> Add Comment </a>
+
+    <div id="comments">
+      {{ comments }}
+    </div>
+  </div>
+
+</body>
+
+</html>

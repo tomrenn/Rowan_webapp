@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #3F1A0A;
+    font-size: medium;
+}
+#switcher {
+    margin-left: 1%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#switcher a {
+    display: inline-block;
+    height:35px;
+    padding-top: 10px;
+    color: #EDD51C;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid #EDD51C;
+    width: 49%
+}
+#rating-section {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+#rating-title {
+    display: inline-block;
+    background: purple;
+    width: 100px;
+    margin-top: -30px;
+    text-align: center;
+}
+.stretch {
+    width: 100%;
+    display:inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+#upvote {
+    display: inline-block;
+    background: green;
+    height: 120px;
+    width: 100px;
+}
+
+#downvote {
+    display: inline-block;
+    background: blue;
+    height: 120px;
+    width: 100px;
+}
+
+#banner {
+    height: 100px;
+    font-size: large;
+    display: block;
+    color: white;
+    background: red;
+}
+
+#welcome {
+    margin-top: 5%;
+    background: green;
+}

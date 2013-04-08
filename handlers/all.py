@@ -184,15 +184,7 @@ class VoteCommentPage(AppHandler):
 		# TODO, respond with some kind of status code to indicate success
 		self.response.headers['Content-Type'] = "application/json; charset=utf-8"
 
-# irreleveant
-class AnotherPage(AppHandler):
+class GoogleMap(AppHandler):
 	def get(self):
-		user_hash = self.request.get("user")
-
-		user_id = user_hash.split('|')[0]
-		if user_hash == wutil.createSecret(user_id):
-			self.write( "success")
-		else:
-			self.write("failure")
-
+		self.render("map.html")
 

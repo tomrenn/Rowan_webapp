@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Rowan Dining </title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<link REL="StyleSheet" href="/css/style.css" type="text/css">
+<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/images/touch-icon-iphone-retina.png" />
+</head>
+
+<body>
+
+
+   <form id="commentForm" action="/food/webComment" method="post">
+   	<textarea name="comment" rows="5"></textarea>
+   	<input type="hidden" name="type" value="{{food_type}}">
+   	<input type="hidden" name="food" value="{{food_value}}">
+   	<input type="submit" value="Comment">
+   </form>
+
+</body>
+
+</html>
